@@ -5,7 +5,7 @@
 # Top level build args
 ARG build_for=linux/amd64
 
-FROM --platform=$build_for python:3.10.7-alpine as base
+FROM --platform=$build_for python:3.13.2-alpine as base
 
 ENV PYTHONFAULTHANDLER=1 \
     PYTHONHASHSEED=random \
